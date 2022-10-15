@@ -2,7 +2,10 @@ module github.com/jintoples/restaurant-management
 
 go 1.19
 
+require gopkg.in/bluesuncorp/validator.v5 v5.10.3
+
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.8.1 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
@@ -31,6 +34,5 @@ require (
 	golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
-	gopkg.in/bluesuncorp/validator.v5 v5.10.3
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )

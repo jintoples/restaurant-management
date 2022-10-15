@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jintoples/restaurant-management/database"
 	"github.com/jintoples/restaurant-management/middleware"
+	"github.com/jintoples/restaurant-management/routes"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

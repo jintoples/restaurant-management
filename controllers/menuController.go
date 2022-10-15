@@ -33,7 +33,6 @@ func GetMenus() gin.HandlerFunc {
 		}
 
 		c.JSON(http.StatusOK, allMenus)
-
 	}
 }
 
@@ -75,7 +74,7 @@ func CreateMenu() gin.HandlerFunc {
 		menu.ID = primitive.NewObjectID()
 		menu.Menu_id = menu.ID.Hex()
 
-		result, insertErr := foodCollection.InsertOne(ctx, menu)
+		result, insertErr := menuCollection.InsertOne(ctx, menu)
 		if insertErr != nil {
 			msg := fmt.Sprintf("Menu item was not created")
 			c.JSON(http.StatusInternalServerError, gin.H{"error": msg})

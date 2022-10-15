@@ -5,7 +5,7 @@ import (
 	"github.com/jintoples/restaurant-management/controllers"
 )
 
-func InvoiceRoute(incomingRoutes *gin.Engine) {
+func InvoiceRoutes(incomingRoutes *gin.Engine) {
 	incomingRoutes.GET("/invoices", controllers.GetInvoices())
 	incomingRoutes.GET("/invoices/:invoice_id", controllers.GetInvoice())
 	incomingRoutes.POST("/invoices", controllers.CreateInvoice())
