@@ -4,8 +4,6 @@ Restaurant management with mongodb, gin & JWT
 
 ## 📦 Routes
 
-### TOAST UI Editor
-
 | Path | Method | Description |
 | --- | --- | --- |
 | /users/signup | GET | Register User
